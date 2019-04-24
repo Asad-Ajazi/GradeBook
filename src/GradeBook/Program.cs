@@ -7,6 +7,9 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
+            // A Gradebook application, enter grades and they will be written to a text file.
+            // The highest, lowest and average grades will be calculated and printed to the console.
+
             IBook book = new DiskBook("The grade book");
             book.GradeAdded += OnGradeAdded;
 
